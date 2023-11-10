@@ -7,3 +7,90 @@
 html, body{
     height: 100%;
 }
+
+    /* PADRÕES */
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+
+    /* HEADER DO MEU SITE */
+
+header{
+    background-image: url('../img/bg.jpg');
+    min-height: 600px;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    background-image: url('../img/logo.png');
+    background-size: 100% 100%;
+    float: left;
+    width: 132px;
+    height: 20px;
+}
+nav.desktop{
+    float: right;
+}
+nav.desktop ul{
+    list-style-type: none;
+}
+nav.desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+nav.desktop li.btn-nav{
+    border: 1px solid white;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+    /* CHAMADA HEADER */
+
+.chamada-header{
+    padding: 110px 0;
+}
+.chamada-header h2{
+    font-size: 47px;
+    color: white;
+    font-weight: normal;
+}
+.chamada-header p{
+    font-size: 17px;
+    max-width: 600px;
+    color: white;
+    margin-top: 10px;
+}
+.chamada-header form{
+    margin-top: 10px;
+}
+.chamada-header input[type=email]{
+    display: inline-block;
+    border-radius: 100px;
+    background-color: white;
+    width: 237px;
+    height: 43px;
+    border: 0;
+    outline: 0;
+    padding-left: 10px;
+}
+.chamada-header input[type=submit]{
+    width: 181px;
+    height: 43px;
+    border-radius: 100px;
+    background-color: #ff5f27;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
