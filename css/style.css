@@ -23,7 +23,7 @@ html, body{
 
 header{
     background-image: url('../img/bg.jpg');
-    min-height: 600px;
+    min-height: 450px;
     padding: 30px 0;
     background-size: cover;
     background-position: center;
@@ -34,6 +34,8 @@ header{
     float: left;
     width: 132px;
     height: 20px;
+    position: relative;
+    z-index: 2;
 }
 nav.desktop{
     float: right;
@@ -49,10 +51,45 @@ nav.desktop a{
     color: white;
     text-decoration: none;
 }
-nav.desktop li.btn-nav{
+nav li.btn-nav{
     border: 1px solid white;
     padding: 3px 8px;
     border-radius: 20px;
+}
+nav.mobile{
+    display: none;
+    float: right;
+}
+nav.mobile ul{
+    background-color: #31475e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 70px 0 30px 20px;
+    display: none;
+    text-align: left;
+    border-bottom: 3px solid #ff5f27;
+    list-style-type: none;
+}
+nav.mobile h3{
+    position: relative;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+}
+nav.mobile li{
+    padding: 10px 0;
+}
+nav.mobile li.btn-nav{
+    display: inline-block;
+    padding: 4px 10px;
+}
+nav.mobile li a{
+    display: block;
+    color: white;
+    text-decoration: none;
 }
 
     /* CHAMADA HEADER */
@@ -93,4 +130,38 @@ nav.desktop li.btn-nav{
     border: 0;
     cursor: pointer;
     color: white;
+}
+
+    /* DESCRIÇÃO */
+
+section.descricao-danki{
+    text-align: center;
+    padding: 30px 0;
+}
+section.descricao-danki p{
+    font-weight: lighter;
+    font-size: 22px;
+    font-style: italic;
+    display: inline-block;
+    max-width: 680px;
+}
+
+    /* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
+    .chamada-header{
+        text-align: center;
+    }
+    .chamada-header p{
+        display: inline-block;
+    }
+    .chamada-header input[type=email]{
+        margin-bottom: 10px;
+    }
 }
