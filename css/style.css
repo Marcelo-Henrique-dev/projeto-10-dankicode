@@ -205,6 +205,20 @@ section.descricao-danki3 > .container{
     font-size: 18px;
 }
 
+    /* SERVIÇOS */
+
+section.servicos{
+    padding: 25px 0;
+}
+.title-servicos{
+    text-align: center;
+}
+.title-servicos h3{
+    color: #31475e;
+    font-size: 22px;
+    font-weight: normal;
+}
+
     /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px){
