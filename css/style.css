@@ -6,8 +6,13 @@
 }
 body{
     height: 100%;
-    background-color: rgba(224, 224, 224, 0.5);
     overflow-x: hidden;
+}
+input[type=submit],
+input[type=text],
+input[type=email]{
+    appearance: none;
+    -webkit-appearance: none;
 }
 
     /* PADRÕES */
@@ -177,6 +182,10 @@ section.descricao-danki2 img{
     float: left;
     width: 45%;
     max-width: 500px;
+    transition: 0.8s;
+}
+section.descricao-danki2 img:hover{
+    transform: scale(1.1);
 }
 
     /* DESCRIÇÃO 3 */
@@ -233,6 +242,10 @@ section.servicos > .container{
     background-color: #ffffff;
     width: calc(33.3% - 10px);
     box-shadow: 0 8px 20px rgba(224, 224, 224, 0.5);
+    transition: 0.5s;
+}
+.box-servico:hover{
+    transform: scale(1.02);
 }
 .box-servico img{
     width: 100%;
@@ -259,6 +272,138 @@ section.servicos > .container{
     text-decoration: none;
     padding: 6px 12px;
     border-radius: 20px;
+}
+
+    /* PORTIFÓLIO */
+
+section.portifolio{
+    padding: 20px 0;
+    background-color: white;
+}
+section.portifolio h2{
+    text-align: center;
+    font-weight: normal;
+    color: #31475e;
+}
+section.portifolio > .container{
+    max-width: 960px;
+    background-color: #f7f7f7;
+    padding: 15px 0;
+}
+.empresas{
+    display: flex;
+    margin: 20px 0;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+.empresa-single{
+    width: 25%;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.empresas .empresa-single:last-child{
+    border-width: 1px;
+}
+
+    /* FORMULÁRIO */
+
+section.formulario{
+    padding: 30px 0;
+}
+section.formulario h2{
+    text-align: center;
+    font-size: 22px;
+    color: #31475e;
+}
+section.formulario form{
+    margin-top: 10px;
+}
+section.formulario > .container{
+    max-width: 960px;
+}
+section.formulario input[type=text]{
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #ebebeb;
+    margin-top: 8px;
+    padding-left: 10px;
+    outline: 0;
+}
+section.formulario textarea{
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 1px solid #ebebeb;
+    outline: 0;
+    padding: 10px;
+}
+section.formulario input[type=submit]{
+    width: 130px;
+    height: 38px;
+    border-radius: 100px;
+    background-color: #ff5f27;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+}
+
+    /* FOOTER */
+
+footer{
+    margin: 50px 0;
+}
+.box-footer{
+    float: left;
+    width: 33.3%;
+    padding: 0 15px;
+}
+.box-footer h2{
+    color: #31475e;
+    font-size: 22px;
+    font-weight: normal;
+}
+.box-footer p{
+    margin-top: 10px;
+    color: #31475e;
+    font-weight: 300;
+    font-size: 15px;
+}
+.box-footer form{
+    margin-top: 10px;
+}
+.box-footer button{
+    width: calc(20% - 10px);
+    margin-left: 10px;
+    max-width: 63px;
+    height: 43px;
+    border: 1px solid #31475e;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+.box-footer input[type=text]{
+    width: 80%;
+    max-width: 208px;
+    height: 43px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: 1px solid #bfbfbf;
+    outline: 0;
+    padding-left: 10px;
+}
+.box-footer button i{
+    color: #31475e;
 }
 
     /* MEDIA QUERIES */
@@ -300,9 +445,26 @@ section.servicos > .container{
         margin: 0 auto;
         margin-top: 10px;
     }
+    section.descricao-danki2 img:hover{
+        transform: none;
+    }
     .box-servico{
         width: 100%;
         max-width: 400px;
-        margin: 0 auto;
+        margin: 3px auto;
+    }
+    .box-servico:hover{
+        transform: none;
+    }
+    .empresa-single{
+        width: 100%;
+        max-width: 640px;
+        margin: 15px auto;
+        border: 1px solid #ececec;
+    }
+    .box-footer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
